@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home</class>
+ <widget class="QWidget" name="home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>661</width>
+    <height>451</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>661</width>
+    <height>451</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Function</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#widget
+{
+	
+	background-image: url(:/Client/QT/icon/Background_2.jpg);
+
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;黑体&quot;;
+color: rgb(0, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>您好，</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>341</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 12pt &quot;Comic Sans MS&quot;;
+background-color: rgba(255, 255, 255,0.7);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;华文隶书&quot;;</string>
+   </property>
+   <property name="text">
+    <string>联系人列表</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style:none;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Client.qrc">
+     <normaloff>:/Client/QT/icon/talk.png</normaloff>:/Client/QT/icon/talk.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>320</y>
+     <width>271</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QToolButton" name="pushButton_receivefile">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_receivefile:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_receivefile:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>接收文件</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Client.qrc">
+        <normaloff>:/Client/QT/icon/File.png</normaloff>:/Client/QT/icon/File.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+      <property name="arrowType">
+       <enum>Qt::NoArrow</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="pushButton_sendfile">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_sendfile:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_sendfile:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>发送文件</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Client.qrc">
+        <normaloff>:/Client/QT/icon/SendFile.png</normaloff>:/Client/QT/icon/SendFile.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="pushButton_quit">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_quit:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_quit:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>退出登录</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Client.qrc">
+        <normaloff>:/Client/QT/icon/LoginOut_blue.png</normaloff>:/Client/QT/icon/LoginOut_blue.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>110</y>
+     <width>132</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>130</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 16pt &quot;微软雅黑&quot;;
+color: rgb(66, 91, 255);</string>
+      </property>
+      <property name="text">
+       <string>收发文件</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 16pt &quot;微软雅黑&quot;;
+color: rgb(66, 91, 255);</string>
+      </property>
+      <property name="text">
+       <string>仅联系人功能</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>320</y>
+      <width>271</width>
+      <height>92</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">font: 15pt &quot;华文楷体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>输入对方昵称</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">font: 15pt &quot;华文楷体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>开始对话</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_sendname">
+         <property name="minimumSize">
+          <size>
+           <width>125</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>125</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255,0.5);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QToolButton" name="pushButton_sendmessage">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_sendmessage:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_sendmessage:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>聊天</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Client.qrc">
+         <normaloff>:/Client/QT/icon/Chat.png</normaloff>:/Client/QT/icon/Chat.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QToolButton" name="pushButton_fresh">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_fresh:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_fresh:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>刷新</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Client.qrc">
+      <normaloff>:/Client/QT/icon/Refresh.png</normaloff>:/Client/QT/icon/Refresh.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="pushButton_startchat">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>120</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_startchat:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_startchat:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>开始对话</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Client.qrc">
+      <normaloff>:/Client/QT/icon/Chat_icon.png</normaloff>:/Client/QT/icon/Chat_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>210</y>
+      <width>271</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QToolButton" name="pushButton_addpeople">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_addpeople:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_addpeople:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>添加联系人</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Client.qrc">
+         <normaloff>:/Client/QT/icon/AddAccount.png</normaloff>:/Client/QT/icon/AddAccount.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="pushButton_deletepeople">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_deletepeople:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#pushButton_deletepeople:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>删除联系人</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Client.qrc">
+         <normaloff>:/Client/QT/icon/Delete.png</normaloff>:/Client/QT/icon/Delete.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>label_3</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+ </widget>
+ <resources>
+  <include location="Client.qrc"/>
+ </resources>
+ <connections/>
+</ui>

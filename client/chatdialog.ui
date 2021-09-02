@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chatdialog</class>
+ <widget class="QWidget" name="chatdialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>410</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>410</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Chat</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#widget
+{
+	
+	background-image: url(:/Client/QT/icon/Background_2.jpg);
+}</string>
+  </property>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser_chat">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>301</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgba(255, 255, 255,0.5);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_sendmessage">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;Comic Sans MS&quot;;
+background-color: rgba(255, 255, 255,0.5);</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="pushButton_send">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>430</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_send:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+color: rgba(0, 0, 0, 1);
+}
+#pushButton_send:!hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Client.qrc">
+     <normaloff>:/Client/QT/icon/Send.png</normaloff>:/Client/QT/icon/Send.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>10</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style:none;</string>
+   </property>
+   <property name="text">
+    <string>终止对话</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Client.qrc">
+     <normaloff>:/Client/QT/icon/Closed.png</normaloff>:/Client/QT/icon/Closed.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>410</width>
+     <height>520</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label_title</zorder>
+  <zorder>textBrowser_chat</zorder>
+  <zorder>lineEdit_sendmessage</zorder>
+  <zorder>pushButton_send</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <resources>
+  <include location="Client.qrc"/>
+ </resources>
+ <connections/>
+</ui>
